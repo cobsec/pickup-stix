@@ -32,9 +32,6 @@ def main():
     local_index = get_DT_data(local_index, 'ip2domain')
     local_index = get_DT_data(local_index, 'domain2registration')
 
-    #if verbose:
-    #pprint(local_index)
-
     new_stix = index2stix(local_index, stixIngest)
     #pprint(local_index)
     print new_stix.to_xml()
